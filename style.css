@@ -1,0 +1,95 @@
+body { background: linear-gradient(180deg, #FFF 0%, #FFF7F5 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.header-page { display: flex; align-items: center; justify-content: center; width: 100%; height: 80px; margin: 0 0 104px 0; background: #6D0000; }
+
+.section-forms { display: inline-flex; flex-direction: column; align-items: flex-start; background: rgba(255, 255, 255, 0.70); width: 508px;
+    box-shadow: 0px 1px 2px 0px #E5E5E5, 0px 1px 3px 0px #E5E5E5; border-radius: 8px; padding: 32px; gap: 24px; margin: 0 0px 64px 0px; }
+
+.section-forms header { display: flex; flex-direction: column; align-items: center; text-align: center; align-self: stretch; }
+
+.section-forms header h2 { font-size: 24px; }
+
+.section-forms header p { font-size: 16px; }
+
+.section-forms header button { width: 191.992px; height: 36px; flex-shrink: 0; border-radius: 4px; font-weight: 600; line-height: 100%; font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; }
+
+.btn-active { background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%), #6D0000; color: #FFF; border: none; }
+
+.btn-active:hover { background: #800; }
+
+.btn-inactive { background: #F9FAFB; color: #667085; border: 1px solid #E4E7EC; }
+
+.margin-login { margin: 0 0px 248px 0px; }
+
+.form-container p { font-size: 14px; }
+
+.form-container div > div { position: relative; }
+
+.form-container figure {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container { display: flex; flex-direction: column; gap: 4px; }
+
+.input-container .input-icon-eye { cursor: pointer; width: 24px; height: 24px; margin-left: 8px; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+
+.form-container input { display: flex; height: 40px; padding: 8px 16px; align-items: center; align-self: stretch; border-radius: 4px;
+    border: 1px solid #E2E4E9; background: #FFF; padding-left: 40px; transition: all 0.3s ease; }
+
+.form-container input:hover { border: 1px solid #6D0000; background: #FFF; box-shadow: 0px 0px 0px 2px rgba(109, 0, 0, 0.25); }
+
+.form-container input:focus { border: 1px solid #6D0000; background: #FFF; box-shadow: 0px 0px 0px 2px rgba(109, 0, 0, 0.25); outline: none; background: #FFF; }
+
+
+.form-container, .form-login, .form-register { display: flex; flex-direction: column; gap: 16px; }
+
+figure { margin: 0 !important; }
+
+.form-container .form-login { display: flex; }
+
+.form-container .form-login > a { text-align: right; color: #525866; text-decoration: none; }
+
+.form-container .form-register { display: none; }
+
+.form-container, .form-login, .form-register, .tam-input { width: 100%; }
+
+.form-container .password-row { display: flex; flex-direction: row; justify-content: space-between; }
+
+.form-container .password-row input { display: flex; width: 219px; max-width: 100%; height: 40px; align-items: center; gap: 8px; }
+
+.form-container button { display: flex; height: 40px; padding: 8px 16px; justify-content: center; align-items: center; gap: 8px; align-self: stretch; font-size: 16px; font-weight: 600;
+    line-height: 100%; border-radius: 8px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%), #6D0000; color: #FFF; border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; }
+
+.form-container button:hover { background: #800; }
+
+footer { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 0 48px 0; text-align: center; font-size: 16px; }
+footer p { margin: 0; }
+
+@media (max-width: 768px) {
+    .header-page { margin: 0 0 32px 0; }
+    .section-forms { max-width: 90%; margin: 40px 0px 56px 0px; }
+    .section-forms header button { width: 152px; height: 36px; flex-shrink: 0; }
+    .form-container .password-row { display: flex; flex-direction: column; gap: 16px; }
+    .form-container .password-row input { display: flex; flex-direction: row; width: 100%; }
+    footer { font-size: 12px; margin: 0px 16px 32px 16px; }
+    .margin-login { margin: 40px 0 216px 0; }
+}
+
+@media (max-width: 480px) {
+    .section-forms header button { max-width: 45%; }
+    .section-forms { margin: 0 0px 56px 0px; }
+    .margin-login { margin: 0 0 56px 0; }
+}
+
+@media (max-width: 375px) {
+    .section-forms header button { font-size: 14px; }
+}
